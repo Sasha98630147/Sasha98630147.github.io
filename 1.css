@@ -81,9 +81,9 @@ h1 {
 	color: #B2B792;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
 	body {
-		width: 500px;
+		width: 400px;
 	}
 	.photo {
 		display: block;
