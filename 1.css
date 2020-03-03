@@ -83,7 +83,7 @@ body {
 	color: #B2B792;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
 	.photo {
 		display: block;
 		position: relative;
