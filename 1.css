@@ -3,15 +3,27 @@
 }
 
 body {
-	margin: 0;
-	background: url(fon.jpg) no-repeat center center fixed;
+	background: url(fon.jpg) center center fixed;
 	background-size: cover;
+	background-position: center;
+	margin: auto;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
 }
 
 .photo {
-	position: absolute;
-	left: 50px;
-	top: 50px;
+	position: relative;
+	float: left;
+	margin: 0 1%;
+	top: 2%;
 	width: 325px;
 	height: 325px;
 	border: 4px solid #7C1D1D;
@@ -21,127 +33,101 @@ body {
 
 .name {
 	position: relative;
-	width: 700px;
-	height: 40px;
-	left: 400px;
-	top: 50px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 36px;
-	line-height: 40px;
 	letter-spacing: 0.02em;
 	color: #BE0000;
 }
 
 .groupinfo {
 	position: relative;
-	width: 185px;
-	height: 36px;
-	left: 400px;
-	top: 25px;
+	margin-top: 2%;
 	font-size: 30px;
-	line-height: 33px;
 	letter-spacing: 0.02em;
 	color: #A92A2A;
 }
 
 .titleinfo {
 	position: relative;
-	width: 546px;
-	height: 40px;
-	left: 400px;
-	top: 21px;
+	margin-top: 2%;
 	font-size: 36px;
-	line-height: 40px;
 	color: #DF8B0D;
 }
 
 .textinfo {
 	position: relative;
-	width: 332px;
-	height: 120px;
-	left: 400px;
-	top: 0px;
+	margin-top: 2%;
 	font-size: 30px;
-	line-height: 33px;
 	letter-spacing: 0.02em;
 	color: #FFA800;
 }
 
-.contacts {
+.titlecontacts {
 	position: relative;
-	width: 600px;
-	height: 200px;
-	left: 50px;
-	top: 0px;
+	clear: both;
+	margin-top: 3%;
+	margin-left: 2%;
 	font-size: 36px;
-	line-height: 40px;
 	color: #7CC91A;
 }
 
 .contactsinfo {
+	position: relative;
+	clear: both;
+	margin-top: 3%;
+	margin-left: 2%;
+	font-size: 36px;
 	color: #B2B792;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 640px) {
+	body {
+		width: 500px;
+	}
 	.photo {
 		display: block;
-		position: relative;
-		left: 0px;
-		margin: 0 auto;
-		top: 50px;
-		width: 400px;
-		height: 400px;
+		float: none;
+		margin: auto;
+		margin-top: 2%;
+		width: 250px;
+		height: 250px;
 		border: 4px solid #7C1D1D;
 		border-radius: 200px;
 	}
 	.name {
 		text-align: center;
-		left: 0;
-		top: 25px;
-		height: 40px;
-		font-size: 36px;
-		line-height: 40px;
+		font-size: 27px;
 		letter-spacing: 0.02em;
 		color: #BE0000;
 	}
 	.groupinfo {
 		text-align: center;
-		margin: 0 auto;
-		left: 0px;
-		top: 30px;
-		width: 185px;
-		height: 36px;
-		font-size: 30px;
-		line-height: 33px;
-		letter-spacing: 0.02em;
-		color: #A92A2A;
+		margin-top: 5%;
+		font-size: 25px;
 	}
 	.titleinfo {
 		text-align: center;
-		margin: 0 auto;
-		top: 30px;
-		left: 0px;
-		width: 546px;
-		height: 40px;
+		margin: auto;
+		margin-top: 0%;
+		font-size: 25px;
 		color: #DF8B0D;
 	}
 	.textinfo {
-		top: 50px;
-		left: 30px;
-	}
-	.contacts {
-		top: 45px;
+		margin-top: 5%;
+		left: 2%;
+		font-size: 25px;
 	}
 	.titlecontacts {
 		text-align: center;
-		margin: 0 auto;
-		width: 220px;
-		height: 40px;
-		top: 40px;
+		font-size: 25px;
+		margin: auto;
+		margin-top: 5%;
+		;
 	}
 	.contactsinfo {
 		text-align: left;
-		top: 30px;
+		font-size: 25px;
+		margin-top: 5%;
 	}
 }
